@@ -8,3 +8,6 @@ vendor/
 server.crt
 server.key
 __debug*
+WillowdaleMUD.pid
+logs/*
+_datafiles/world/default/*

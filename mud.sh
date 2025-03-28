@@ -1,4 +1,4 @@
-#!/bin/bash
+    #!/bin/bash
 # service.sh: Start, stop, or restart the WillowdaleMUD program
 
 # Define variables
@@ -16,6 +16,12 @@ cd "$DIR" || { echo "Directory not found: $DIR"; exit 1; }
 
 # Function to start the program
 start_program() {
+    # Check if the program executable exists, build it if not
+    if [ ! -f "$PROGRAM" ]; then
+        echo "$PROGRAM executable not found. Building first..."
+        compile_program
+    fi
+
     if [ -f "$PIDFILE" ]; then
         PID=$(cat "$PIDFILE")
         if ps -p "$PID" > /dev/null 2>&1; then
