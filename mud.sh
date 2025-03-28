@@ -8,7 +8,7 @@ PIDFILE="WillowdaleMUD.pid"
 
 # Set environment variables
 export LOG_LEVEL=LOW
-export LOG_PATH="/Users/jens/mud/willowdale/WillowdaleGo/logs/log.txt"
+export LOG_PATH="/Users/jens/mud/willowdale/logs/log.txt"
 export CONFIG_PATH="/Users/jens/mud/willowdale/_datafiles/willowdale-config.yaml"
 
 # Change to the program directory
